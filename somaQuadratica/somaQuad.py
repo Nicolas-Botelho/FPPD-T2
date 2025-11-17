@@ -5,7 +5,8 @@ def square_sum(arr: np.ndarray) -> int:
   total = 0
 
   for elem in arr:
-    if elem // 2 == 0:
+    elem = int(elem)
+    if elem % 2 == 0:
       total += elem * elem
     else:
       total -= elem * elem
